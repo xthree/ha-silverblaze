@@ -1,5 +1,6 @@
 {
   "name": "Silverblaze (Idaho Power)",
   "homeassistant": "2026.10.0",
-  "render_readme": true
+  "render_readme": true,
+  "country": "US"
 }

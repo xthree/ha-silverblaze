@@ -23,7 +23,7 @@ def test_manifest_values() -> None:
     assert MANIFEST["dependencies"] == ["recorder"]
     assert MANIFEST["integration_type"] == "service"
     assert MANIFEST["iot_class"] == "cloud_polling"
-    assert MANIFEST["version"] == "0.1.0"
+    assert MANIFEST["version"] == "0.1.1"
     assert MANIFEST["documentation"] == "https://github.com/xthree/ha-silverblaze"
     assert MANIFEST["issue_tracker"] == "https://github.com/xthree/ha-silverblaze/issues"
 
@@ -37,6 +37,7 @@ def test_hacs_json() -> None:
         "name": "Silverblaze (Idaho Power)",
         "homeassistant": "2026.10.0",
         "render_readme": True,
+        "country": "US",
     }
 
 
