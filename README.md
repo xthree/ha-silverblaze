@@ -22,7 +22,12 @@ Your utility not listed? Many utilities use the same Silverblaze usage portal. S
 
 Requires Home Assistant 2026.10 or newer.
 
-**a) Manual copy.** Copy the `custom_components/silverblaze` directory of this repository into
+**a) HACS (recommended).** In HACS, open the menu (top right) > **Custom repositories**, add
+`https://github.com/xthree/ha-silverblaze` with type **Integration**, then find
+**Silverblaze (Idaho Power)** in HACS, download it and restart Home Assistant. HACS then
+offers new versions as updates.
+
+**b) Manual copy.** Copy the `custom_components/silverblaze` directory of this repository into
 `<config>/custom_components/` on your Home Assistant host, then restart Home Assistant.
 
 If your Home Assistant host is reachable over SSH, `scripts/deploy-to-ha.sh` does the copy for
@@ -34,9 +39,6 @@ scripts/deploy-to-ha.sh [host] [config-dir]
 
 The defaults are host `ha` and config directory `/config`. The remote side uses `sudo` unless
 the SSH user is root. The script does not restart Home Assistant; restart it afterwards.
-
-**b) HACS custom repository** (once the repository is public). In HACS, add this repository as a
-custom repository of type "Integration", install **Silverblaze (Idaho Power)**, and restart Home Assistant.
 
 After restarting, go to **Settings > Devices & services > Add integration**, choose
 **Silverblaze (Idaho Power)**, pick your utility, sign in with your utility account, and choose
