@@ -3,5 +3,4 @@ __pycache__/
 .venv/
 .pytest_cache/
 *.har
-spike-report.json
 probe-report*.json

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ha-silverblaze"
+version = "0.1.0"
+description = "Home Assistant integration for Silverblaze-powered utility portals"
+requires-python = ">=3.14"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = ["aiohttp"]
+
+[project.scripts]
+silverblaze-probe = "custom_components.silverblaze.api.probe:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest-homeassistant-custom-component==0.13.373",
+    "aioresponses",
+    "ruff~=0.17.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["custom_components*"]
+namespaces = true
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]

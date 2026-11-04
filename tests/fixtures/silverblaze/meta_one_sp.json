@@ -1,0 +1,25 @@
+{
+  "body": {
+    "Metadata": [
+      {
+        "CollectionId": "SP0000000001",
+        "Timezone": "MST",
+        "TimeSeries": [
+          {
+            "Interval": "60min",
+            "Kind": "usage",
+            "SeriesSpec": {
+              "uom": "kwh",
+              "Commodity": "1",
+              "Direction": "1"
+            },
+            "AmiTimeSpan": {
+              "Oldest": "2025-01-01T07:00:00Z",
+              "Newest": "2026-11-02T06:00:00Z"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

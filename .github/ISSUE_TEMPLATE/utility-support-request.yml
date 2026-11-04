@@ -1,0 +1,57 @@
+name: Utility support request
+description: Ask for support for a utility that uses a Silverblaze usage portal.
+title: "Utility support request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do NOT include your password, account number or meter ID.**
+        Review everything you paste or attach before submitting.
+  - type: input
+    id: utility-name
+    attributes:
+      label: Utility name
+      placeholder: Example Electric Co
+    validations:
+      required: true
+  - type: input
+    id: portal-url
+    attributes:
+      label: Usage portal URL
+      description: The page where you see your usage after logging in.
+      placeholder: https://example.test/usage
+    validations:
+      required: true
+  - type: checkboxes
+    id: commodities
+    attributes:
+      label: Commodities
+      description: Which usage do you want imported?
+      options:
+        - label: Electric
+        - label: Gas
+        - label: Water
+        - label: Other
+  - type: textarea
+    id: probe-report
+    attributes:
+      label: Probe report
+      description: >-
+        Paste or attach the JSON report written by the probe tool. Review it first and
+        remove anything that looks personal.
+    validations:
+      required: true
+  - type: checkboxes
+    id: report-reviewed
+    attributes:
+      label: Review
+      options:
+        - label: I reviewed the probe report and it contains no personal data
+          required: true
+  - type: dropdown
+    id: willing-to-test
+    attributes:
+      label: Willing to test a branch with your own account?
+      options:
+        - "Yes"
+        - "No"

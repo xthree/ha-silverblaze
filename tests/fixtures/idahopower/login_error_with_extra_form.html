@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><title>Sign in (synthetic)</title></head>
+<body>
+<div class="error">Invalid username or password (synthetic)</div>
+<form action="/Account/Login" method="post">
+  <input type="hidden" name="ReturnUrl" value="SYNTHETIC_RETURN_URL" />
+  <input type="hidden" name="__RequestVerificationToken" value="SYNTHETIC_RVT_0123456789" />
+  <input type="text" name="Username" value="" />
+  <input type="password" name="Password" />
+  <button type="submit" name="button" value="login">Sign in</button>
+</form>
+<form action="https://auth.idahopower.com/Account/ExternalLogin" method="post">
+  <input type="hidden" name="provider" value="SYNTHETIC_PROVIDER" />
+  <button type="submit" name="button" value="external">Other sign-in</button>
+</form>
+</body></html>

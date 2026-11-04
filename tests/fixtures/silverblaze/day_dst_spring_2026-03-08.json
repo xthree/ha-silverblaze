@@ -1,0 +1,134 @@
+{
+  "TimeFrameTitle": "Synthetic day",
+  "ResponseMeta": {
+    "Resolution": "60min"
+  },
+  "AlignedSeriesData": {
+    "forward/usage": [
+      1.0,
+      1.0,
+      null,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "IntervalLayout": {
+    "ChartIntervals": [
+      {
+        "EpochMs": 1772953200000,
+        "Category": "slot 0"
+      },
+      {
+        "EpochMs": 1772956800000,
+        "Category": "slot 1"
+      },
+      {
+        "EpochMs": 1772960400000,
+        "Category": "slot 2"
+      },
+      {
+        "EpochMs": 1772960400000,
+        "Category": "slot 3"
+      },
+      {
+        "EpochMs": 1772964000000,
+        "Category": "slot 4"
+      },
+      {
+        "EpochMs": 1772967600000,
+        "Category": "slot 5"
+      },
+      {
+        "EpochMs": 1772971200000,
+        "Category": "slot 6"
+      },
+      {
+        "EpochMs": 1772974800000,
+        "Category": "slot 7"
+      },
+      {
+        "EpochMs": 1772978400000,
+        "Category": "slot 8"
+      },
+      {
+        "EpochMs": 1772982000000,
+        "Category": "slot 9"
+      },
+      {
+        "EpochMs": 1772985600000,
+        "Category": "slot 10"
+      },
+      {
+        "EpochMs": 1772989200000,
+        "Category": "slot 11"
+      },
+      {
+        "EpochMs": 1772992800000,
+        "Category": "slot 12"
+      },
+      {
+        "EpochMs": 1772996400000,
+        "Category": "slot 13"
+      },
+      {
+        "EpochMs": 1773000000000,
+        "Category": "slot 14"
+      },
+      {
+        "EpochMs": 1773003600000,
+        "Category": "slot 15"
+      },
+      {
+        "EpochMs": 1773007200000,
+        "Category": "slot 16"
+      },
+      {
+        "EpochMs": 1773010800000,
+        "Category": "slot 17"
+      },
+      {
+        "EpochMs": 1773014400000,
+        "Category": "slot 18"
+      },
+      {
+        "EpochMs": 1773018000000,
+        "Category": "slot 19"
+      },
+      {
+        "EpochMs": 1773021600000,
+        "Category": "slot 20"
+      },
+      {
+        "EpochMs": 1773025200000,
+        "Category": "slot 21"
+      },
+      {
+        "EpochMs": 1773028800000,
+        "Category": "slot 22"
+      },
+      {
+        "EpochMs": 1773032400000,
+        "Category": "slot 23"
+      }
+    ]
+  }
+}

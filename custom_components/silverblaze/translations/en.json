@@ -1,0 +1,126 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Choose your utility",
+        "data": {
+          "utility": "Utility"
+        },
+        "data_description": {
+          "utility": "The company whose online usage pages are provided by Silverblaze. Not listed? See \"Supported utilities\" in the README."
+        }
+      },
+      "credentials": {
+        "title": "Sign in to {utility_name}",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "The username (usually your email) for your utility's online account.",
+          "password": "Stored in Home Assistant's configuration storage and included in HA backups. Only sent to your utility."
+        }
+      },
+      "history": {
+        "title": "Usage history",
+        "description": "{utility_name} has hourly usage for this account from {history_start}.\n\nYou can change this later in the integration's settings. Changing it later never deletes hours already imported.",
+        "data": {
+          "history": "History to import"
+        }
+      },
+      "history_unknown": {
+        "title": "Usage history",
+        "description": "You can change this later in the integration's settings. Changing it later never deletes hours already imported.",
+        "data": {
+          "history": "History to import"
+        }
+      },
+      "start_date": {
+        "title": "Start date",
+        "description": "Only usage from this date on will be imported. Earlier hours are skipped. You can change this later in the integration's settings; changing it never deletes hours already imported.",
+        "data": {
+          "import_from": "Start date"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate {utility_name}",
+        "description": "The password for {username} no longer works. Enter your current {utility_name} password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password.",
+      "cannot_connect": "Failed to connect.",
+      "login_flow_changed": "Your utility's login flow changed in a way this version does not understand. Check for an integration update.",
+      "unknown": "Unexpected error.",
+      "interval_out_of_range": "Choose a value between 6 and 24 hours.",
+      "date_in_future": "Pick a date on or before today."
+    },
+    "abort": {
+      "already_configured": "Account is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    },
+    "create_entry": {
+      "default": "Your usage history is being imported in the background. It can take several minutes before it appears in the Energy dashboard."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "latest_data_hour": {
+        "name": "Latest data hour"
+      },
+      "last_successful_update": {
+        "name": "Last successful update"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Silverblaze (Idaho Power) options",
+        "description": "Changing or removing the start date never deletes hours already imported.",
+        "menu_options": {
+          "settings": "Change settings",
+          "import_all": "Import all available history"
+        }
+      },
+      "settings": {
+        "title": "Change settings",
+        "data": {
+          "import_from": "Import history from",
+          "update_interval_hours": "Update interval (hours)"
+        },
+        "data_description": {
+          "import_from": "Only import usage from this date on. Once a date is saved, the previous menu shows an option labeled \"Import all available history\" that imports everything your utility still has. Changing this date never deletes hours already imported; to remove old hours, use Developer tools > Statistics.",
+          "update_interval_hours": "How often to check for new data (6-24). Your utility publishes usage about 2-4 days late."
+        }
+      },
+      "import_all": {
+        "title": "Import all available history",
+        "description": "This removes your \"Import history from\" date (currently {current_date}). Nothing you have already imported is deleted. Right after you confirm, any earlier usage your utility still has is added to your Energy history. This can take a few minutes."
+      }
+    },
+    "error": {
+      "interval_out_of_range": "Choose a value between 6 and 24 hours.",
+      "date_in_future": "Pick a date on or before today."
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Failed to connect to Idaho Power or Silverblaze; will retry on the next update."
+    },
+    "login_flow_changed": {
+      "message": "Your utility's login flow changed in a way this version does not understand. Check for an integration update."
+    }
+  },
+  "selector": {
+    "history_choice": {
+      "options": {
+        "all": "Import all available history (recommended)",
+        "from_date": "Start from a specific date"
+      }
+    }
+  }
+}

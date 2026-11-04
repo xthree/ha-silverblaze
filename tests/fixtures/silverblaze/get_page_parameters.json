@@ -1,0 +1,10 @@
+{
+  "ClientId": 999,
+  "Layout": {
+    "TabKey": "tab.myusage",
+    "Parameters": "SYNTHETIC_LAYOUT_PARAMETERS",
+    "WidgetList": [
+      {"WidgetKey": "widget.consumption", "Title": "Usage"}
+    ]
+  }
+}

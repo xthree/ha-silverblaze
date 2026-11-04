@@ -1,0 +1,12 @@
+{
+  "TimeFrameTitle": "Synthetic day",
+  "ResponseMeta": {
+    "Resolution": "60min"
+  },
+  "AlignedSeriesData": {
+    "forward/usage": []
+  },
+  "IntervalLayout": {
+    "ChartIntervals": []
+  }
+}
